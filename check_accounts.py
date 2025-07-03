@@ -3,7 +3,7 @@ import requests
 from sqlite3 import connect
 
 def buscar_clientes():
-    conn = connect('database/support.db')
+    conn = connect('support.db')
     cursor = conn.cursor()
     cursor.execute("SELECT id, nome FROM clientes WHERE status = 'ativa'")
     return cursor.fetchall()
