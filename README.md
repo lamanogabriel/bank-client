@@ -1,2 +1,13 @@
-# bank-client
-📌 Descrição do projeto:  Projeto simples que simula um atendimento de suporte bancário. Utiliza SQLite para armazenar dados de clientes, uma API Flask para simular o status de transações e um script em Python para consultar contas ativas e exibir o status.
+# Simulador de Suporte Bancário
+
+Projeto simples com:
+
+- SQLite para dados de clientes
+- API Flask para status de transações
+- Python para consultar clientes ativos e mostrar status da última transação
+
+## Como usar
+
+1. Crie o banco: `sqlite3 support.db < database/bank_users.sql`
+2. Rode a API: `python api/mock_bank_api.py`
+3. Execute o script: `python support/check_accounts.py`
